@@ -173,7 +173,7 @@ def get_args_parser():
     parser.add_argument('--log_dir', default='output_dir_pretrained',
                         help='path where to tensorboard log')
 
-    # parser.add_argument(' --resume' , default='output_dir_pretrained/checkpoint-19.pth ',
+    # parser.add_argument('--resume' , default='output_dir_pretrained/checkpoint-xx.pth')
     parser.add_argument('--resume', default='',
                         help='resume from checkpoint')
 
