@@ -266,7 +266,7 @@ def main(args, mode='train', test_image_path=''):
                     args=args, model=model, model_without_ddp=model, optimizer=optimizer,
                     loss_scaler=loss_scaler, epoch=epoch)
     else:
-        model = timm.create_modeL('resnet18', pretrained=True, num_classes=36, drop_rate=0.1, drop_path_rate=0.1)
+        model = timm.create_model('resnet18', pretrained=True, num_classes=36, drop_rate=0.1, drop_path_rate=0.1)
 
         class_dict = {'apple': 0, 'banana': 1, 'beetroot': 2, 'bell pepper': 3, 'cabbage': 4, 'capsicum': 5,
                       'carrot': 6, 'cauliflower': 7, 'chilli pepper': 8, 'corn':
