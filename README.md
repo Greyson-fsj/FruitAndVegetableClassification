@@ -1,4 +1,3 @@
-# FruitAndVegetableClassification
 # 基于Pytorch resnet18的果蔬分类任务
 
 本项目完全来自于B站up“深度学习每日摘要”，因为刚学习自己看着视频将代码整理出来的
