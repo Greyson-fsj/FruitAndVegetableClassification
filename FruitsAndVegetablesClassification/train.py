@@ -278,7 +278,7 @@ def main(args, mode='train', test_image_path=''):
 
         n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
         print('number of trainable params (M):%.2f' % (n_parameters / 1.e6))
-        optimizer = torch.optim.AdamM(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+        optimizer = torch.optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
         os.makedirs(args.log_dir, exist_ok=True)
         loss_scaler = NativeScaler()
 
