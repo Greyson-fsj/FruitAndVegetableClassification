@@ -298,7 +298,7 @@ def main(args, mode='train', test_image_path=''):
         print(f"image path is {test_image_path}")
         print(
             f"score is {score.item()}, class id is {class_idx.item()},class name is {list(class_dict.keys())[list(class_dict.values()).index(class_idx)]}")
-        time.sleep(0.5)
+
 
 
 if __name__ == '__main__':
